@@ -73,14 +73,14 @@
         <div class="sidebar-left" data-simplebar style="height: 100%">
           <!-- sidebar menu -->
           <ul class="nav sidebar-inner" id="sidebar-menu">
-            <li {% if PageName == 'Dashboard' %}  class="active" {% endif %}>
+            <li class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}" >
               <a class="sidenav-item-link" href={% url "home" %}>
                 <i class="mdi mdi-briefcase-account-outline"></i>
                 <span class="nav-text">Dashboard</span>
               </a>
             </li>
 
-            <li  {% if PageName == 'AddCustomer' %}  class="active" {% endif %}>
+            <li  class="{% if request.resolver_match.url_name == 'add_customer' %}active{% endif %}">
               <a class="sidenav-item-link" href={% url "add_customer" %}>
                 <i class="mdi mdi-chart-line"></i>
                 <span class="nav-text">Add New Customer</span>
