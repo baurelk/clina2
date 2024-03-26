@@ -151,3 +151,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 APP_NAME = 'Clina'
 
 APP_DESC_NAME = 'Pressing Management System'
+
+LOGIN_URL = 'login'
