@@ -3,6 +3,6 @@ from app import views
 urlpatterns = [
     
     path('', views.dashbordView, name='home'),
-    path('/add/customer', views.AddCustomer, name='add_customer'),
+    path('add/customer/', views.AddCustomer, name='add_customer'),
 
 ]

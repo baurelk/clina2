@@ -146,12 +146,12 @@
               </ul>
             </li>
 
-            <li class="section-title">Documentation</li>
+            <li class="section-title">App Setting</li>
 
-            <li>
-              <a class="sidenav-item-link" href="getting-started.html">
-                <i class="mdi mdi-airplane"></i>
-                <span class="nav-text">Getting Started</span>
+            <li  class="{% if request.resolver_match.url_name == 'clothing_cat_page' %}active{% endif %}">
+              <a class="sidenav-item-link" href={% url "clothing_cat_page" %}>
+                <i class="mdi mdi-chart-line"></i>
+                <span class="nav-text">clothing category</span>
               </a>
             </li>
 

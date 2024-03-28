@@ -13,6 +13,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('accounts/', include('accounts.urls')),
+    
+    path('app/params/', include('app_params.urls')),
 
     path('', include('app.urls')),
 
